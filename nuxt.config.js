@@ -79,13 +79,13 @@ export default {
                 //   audience: 'http://localhost:3000',
                 //   redirectUrl: 'http://localhost:3000/callback'
             }
-        }
-        //   redirect: {
-        // 	login: '/login',
-        // 	logout: '/',
-        // 	home: '/app',
-        // 	// callback: '/login'
-        //   },
+        },
+        // redirect: {
+        	// login: '/login',
+        	// logout: '/logout',
+        	// home: '/app',
+        	// callback: '/login'
+        // },
     },
     /*
      ** Build configuration

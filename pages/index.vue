@@ -86,8 +86,9 @@
 			login() {
 				this.$auth.loginWith('auth0')
 			},
-			logout() {
-				this.$auth.logout()
+			async logout() {
+				await this.$auth.logout()
+                window.location.href = 'https://dev-b36ddgyg.eu.auth0.com/v2/logout?returnTo=http%3A%2F%2Flocalhost:3000'
 			}
 		}
 	}
