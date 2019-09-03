@@ -23,6 +23,7 @@
 
         </div>
 		<div class="flex flex-row mb-4">
+            <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full" @click="alert('My message')">Show alert</button>
 			<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" @click.stop="login()">Login</button>
             <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full" @click.stop="logout()">Logout</button>
 			</div>
@@ -80,7 +81,8 @@
 			},
 			posts() {
 				return blogPosts
-			}
+			},
+            
 		},
 		methods: {
 			login() {
@@ -89,7 +91,10 @@
 			async logout() {
 				await this.$auth.logout()
                 window.location.href = 'https://dev-b36ddgyg.eu.auth0.com/v2/logout?returnTo=http%3A%2F%2Flocalhost:3000'
-			}
+			},
+            alert(message) {
+                alert(message)
+            }
 		}
 	}
 </script>
