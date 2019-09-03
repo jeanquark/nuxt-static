@@ -7,7 +7,7 @@
             <div class="w-1/3 p-2" v-for="post in posts" :key="post.slug">
                 <!-- <div class="text-gray-700 text-center bg-gray-400 p-2">1</div> -->
 				<div class="text-center rounded overflow-hidden shadow-lg">
-					<img class="w-full" :src="`/images/${post.image}`" :alt="`${post.image}`">
+					<img class="w-full" :src="`images/${post.image}`" :alt="`${post.image}`">
 					<div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">{{ post.title }}</div>
                         <p class="text-gray-700 text-base">
