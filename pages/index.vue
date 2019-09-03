@@ -27,7 +27,7 @@
             <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full" @click.stop="logout()">Logout</button>
 			</div>
 		<div class="flex flex-row mb-4">
-            <h2>Auth</h2><br />
+            <h2>Authentication</h2><br />
             <!-- isAuthenticated: {{ isAuthenticated }}<br /> -->
             <p v-if="!isAuthenticated">
                 You're not authenticated yet. Maybe you want to <nuxt-link to="/auth/sign-in" class="link">sign in</nuxt-link> and see what happens?
